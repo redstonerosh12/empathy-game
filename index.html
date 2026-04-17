@@ -68,7 +68,7 @@ tw-hook[name="fdw"] {
     color: #11d1ee; /* cyan */
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="startup" color="yellow"></tw-tag><tw-passagedata pid="1" name="Opening Statement" tags="" position="875,400" size="100,100">(text-style: &quot;italic&quot;)[You stand outside of Ah Ma&#39;s flat, holding a plastic bag of groceries in one hand and your phone in the other.]
 
-(text-style: &quot;italic&quot;)[Work has sent you two messages about tomrrow&#39;s meeting. Shaun needs to be picked up from school later. Your husband just texted if you would be home in time for dinner.]
+(text-style: &quot;italic&quot;)[Work has sent you two messages about tomorrow&#39;s meeting. Shaun needs to be picked up from school later. Your husband just texted if you would be home in time for dinner.]
 
 (text-style: &quot;italic&quot;)[Last week… Dr Lim said it was early... Still early. Keep it simple. Don’t rush her.]
 
@@ -244,7 +244,7 @@ However, as you explained to them your situation, they were understanding and di
 
 You’ll figure this out together.]
 
-[[Next-&gt;2ndOpening1]</tw-passagedata><tw-passagedata pid="11" name="ThreeWaySplit" tags="" position="925,1175" size="100,100">(text-style: &quot;italic&quot;)[Before you leave, you check the medication box.]
+[[Next-&gt;2ndOpening1]]</tw-passagedata><tw-passagedata pid="11" name="ThreeWaySplit" tags="" position="925,1175" size="100,100">(text-style: &quot;italic&quot;)[Before you leave, you check the medication box.]
 
 (text-style: &quot;italic&quot;)[Today&#39;s slot is empty, and there&#39;s a cup of half-drunk water on the table...]
 
@@ -994,7 +994,7 @@ The words stay with you...]
 
 (link:&quot;You close the journal.&quot;)[(goto:&quot;EndingFinal&quot;)]
 
-[[ -&gt;EndingFinal]]</tw-passagedata><tw-passagedata pid="44" name="EndingFinal" tags="" position="3350,625" size="100,100">The End.
+[[ -&gt;EndingFinal]]</tw-passagedata><tw-passagedata pid="44" name="EndingFinal2" tags="" position="3300,825" size="100,100">The End.
 
 Thank you for playing!
 </tw-passagedata><tw-passagedata pid="45" name="NextThird" tags="" position="2600,525" size="100,100">(text-style: &quot;italic&quot;)[Once again, you find yourself standing outside Ah Ma’s flat, a plastic bag of groceries in one hand and her phone in the other. You are here to check in on her.
@@ -1039,7 +1039,47 @@ $ChoiceOpening
 
 [[ -&gt;ScoldAhma]]
 
-[[ -&gt;CalmDownAhma]]</tw-passagedata></tw-storydata>
+[[ -&gt;CalmDownAhma]]</tw-passagedata><tw-passagedata pid="46" name="EndingFinal" tags="" position="3300,675" size="100,100">(text-style: &quot;italic&quot;)[
+(live: 1s)[(replace: ?l1)[You try to remember the hardship you went through taking care of Ah Ma.]
+]
+|l1&gt;[](live: 4s)[(replace: ?l2)[To make sense of her passsing.
+]
+
+|l2&gt;[](live: 6s)[(replace: ?l3)[You thought it would stay with you.]
+]
+
+|l3&gt;[](live: 8s)[(replace: ?l4)[But when you reach for it…]
+]
+
+|l4&gt;[](live: 10s)[(replace: ?l5)[All that comes back  
+	is how she cared for you.]
+]
+
+|l5&gt;[](live: 13s)[(replace: ?l6)[The nights she stayed by your side in the hospital,  
+	sleeping in that stiff chair.]
+]
+
+|l6&gt;[](live: 16s)[(replace: ?l7)[The way she cooked soup on weekends,  
+	just because you liked it.]
+]
+
+|l7&gt;[](live: 19s)[(replace: ?l8)[The quiet question, “Have you eaten?”]
+]
+
+|l8&gt;[](live: 22s)[(replace: ?l9)[…]
+]
+
+|l9&gt;[](live: 25s)[(replace: ?l10)[You thought you would remember how difficult it was.]
+]
+
+|l10&gt;[](live: 28s)[(replace: ?l11)[But in the end, all that remains is….]
+]
+]
+
+[[&quot;Next&quot; -&gt;EndingFinal2]]
+
+
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
