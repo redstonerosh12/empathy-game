@@ -83,7 +83,6 @@ tw-hook[name="fdw"] {
 $ChoiceOpening
 
 (link: &quot;Sit down with Ah Ma and explain things slowly to her.&quot;)[
-(link: &quot;Sit down with Ah Ma and explain things slowly to her.&quot;)[
 	(set: $ahmaPoints to $ahmaPoints + 1)
 	(set: $sallyBurden to $sallyBurden + 1)
 	(goto: &quot;ExplainGently&quot;)
@@ -141,13 +140,6 @@ $ChoiceOpening
 |sally&gt;[&quot;I came over to help you ma.&quot;]
 
 |ahm&gt;[&quot;Why need to help me?&quot;]
-</tw-passagedata><tw-passagedata pid="4" name="AvoidFirst" tags="" position="1175,525" size="100,100">(text-style: &quot;italic&quot;)[You unpacked the groceries, glance at the medicine box and checked the rice tin.]
-
-|ahma&gt;[&quot;You never answer me. Why you come today ah?&quot;]
-
-|sally&gt;[&quot;I came over to help you ma.&quot;]
-
-|ahm&gt;[&quot;Why need to help me?&quot;]
 
 $ChoiceOpening
 
@@ -155,8 +147,6 @@ $ChoiceOpening
 	(goto: &quot;ExplainGently&quot;)
     ]
 
-(link:&quot;Turn and explain directly.&quot;)
-	[(goto: &quot;ExplainDirectly&quot;)]
 (link:&quot;Turn and explain directly.&quot;)
 	[(goto: &quot;ExplainDirectly&quot;)]
 
@@ -172,26 +162,15 @@ $ChoiceOpening
 |sally&gt;[&quot;The doctor said your memory is changing a little. Sometimes it may be harder to remember things, or words, or what day it is. That’s why I’ll come by more often.&quot;]
 
 |ahma&gt;[&quot;So... my brain spoiled already?&quot;]
-[[ -&gt;ExplainGently]]
-[[ -&gt;ExplainDirectly]]
-[[ -&gt;AvoidContinue]]</tw-passagedata><tw-passagedata pid="5" name="ExplainGently" tags="" position="825,650" size="100,100">|sally&gt;[&quot;No rush, Ma. Sit with me first&quot;]
-
-(text-style: &quot;italic&quot;)[Ah Ma hesitates, then sits.]
-
-|sally&gt;[&quot;The doctor said your memory is changing a little. Sometimes it may be harder to remember things, or words, or what day it is. That’s why I’ll come by more often.&quot;]
-
-|ahma&gt;[&quot;So... my brain spoiled already?&quot;]
 
 $ChoiceOpening
 
-(link: &quot;Assure her.&quot;)[
 (link: &quot;Assure her.&quot;)[
 	(set: $ahmaPoints to $ahmaPoints + 1)
 	(set: $sallyBurden to $sallyBurden + 1)
 	(goto: &quot;GentleResponse&quot;)
 ]
 
-(link: &quot;Tell her directly what her illness is.&quot;)[
 (link: &quot;Tell her directly what her illness is.&quot;)[
 	(set: $ahmaPoints to $ahmaPoints + 0)
 	(goto: &quot;ClinicalLabel&quot;)
@@ -208,26 +187,15 @@ $ChoiceOpening
 |sally&gt;[&quot;So from now, it is harder to do things alone.&quot;]
 
 |ahma&gt;[&quot;Oh... I can&#39;t do things alone?&quot;]
-[[ -&gt;ClinicalLabel]]</tw-passagedata><tw-passagedata pid="6" name="ExplainDirectly" tags="" position="975,675" size="100,100">|sally&gt;[“Ma, listen. The doctor said you have dementia. That’s why you keep forgetting things.”]
-
-|ahma&gt;[&quot;Dementia?&quot;]
-
-|sally&gt;[“It means your memory is getting worse...”] 
-
-|sally&gt;[&quot;So from now, it is harder to do things alone.&quot;]
-
-|ahma&gt;[&quot;Oh... I can&#39;t do things alone?&quot;]
 
 $ChoiceOpening
 
-(link: &quot;Soften your tone and respond gently.&quot;)[
 (link: &quot;Soften your tone and respond gently.&quot;)[
 	(set: $ahmaPoints to $ahmaPoints + 1)
 	(set: $sallyBurden to $sallyBurden + 1)
 	(goto: &quot;GentleResponse&quot;)
 ]
 
-(link: &quot;Tell her directly what her illness is.&quot;)[
 (link: &quot;Tell her directly what her illness is.&quot;)[
 	(goto: &quot;ClinicalLabel&quot;)
 ]
@@ -238,27 +206,17 @@ $ChoiceOpening
 |ahma&gt;[“You sure ah?”]
 
 (text-style: &quot;italic&quot;)[You nod.]
-[[ -&gt;ClinicalLabel]]</tw-passagedata><tw-passagedata pid="7" name="GentleResponse" tags="" position="750,925" size="100,100">|sally&gt;[&quot;No... not spoiled. Sometimes memory becomes slower. But we’ll manage it together.”]
-
-|ahma&gt;[“You sure ah?”]
-
-(text-style: &quot;italic&quot;)[You nod.]
 
 
 [[ -&gt;AhMaExpression]]
 (goto: &quot;AhMaExpression&quot;)</tw-passagedata><tw-passagedata pid="8" name="ClinicalLabel" tags="" position="950,925" size="100,100">|sally&gt;[“It’s dementia, Ma.”]
-(goto: &quot;AhMaExpression&quot;)</tw-passagedata><tw-passagedata pid="8" name="ClinicalLabel" tags="" position="950,925" size="100,100">|sally&gt;[“It’s dementia, Ma.”]
 
-|ahma&gt;[“Dementia means what?”]
 |ahma&gt;[“Dementia means what?”]
 
 |sally&gt;[“It means the brain slowly forgets things.”]
-|sally&gt;[“It means the brain slowly forgets things.”]
 
 |ahma&gt;[“…then next time I forget you also?”]
-|ahma&gt;[“…then next time I forget you also?”]
 
-(text-style: &quot;italic&quot;)[The words, they do not come together.]
 (text-style: &quot;italic&quot;)[The words, they do not come together.]
 
 [[ -&gt;AhMaExpression]]
@@ -309,15 +267,11 @@ $ChoiceOpening
 (link:&quot;Restart the conversation, attempting to be more gentle.&quot;) [
 (set: $ahMaPoints to $ahMaPoints + 1)
 (goto: &quot;RestartConversation&quot;)
-(goto: &quot;RestartConversation&quot;)
 ]
 
 [[ -&gt;ExplainYourself]]
 [[ -&gt;InsistCheck]]
 [[ -&gt;RestartConversation]]
-</tw-passagedata><tw-passagedata pid="12" name="AhMaExpression" tags="" position="850,1050" size="100,100">(text-style: &quot;italic&quot;)[Ah ma does not say anything, but her face changes. 
-
-She looks upset, and gets up to watch TV, seemingly to distract herself from the grim reality of it all.]
 </tw-passagedata><tw-passagedata pid="12" name="AhMaExpression" tags="" position="850,1050" size="100,100">(text-style: &quot;italic&quot;)[Ah ma does not say anything, but her face changes. 
 
 She looks upset, and gets up to watch TV, seemingly to distract herself from the grim reality of it all.]
@@ -371,11 +325,6 @@ Ah Ma turns away.]
 |sally&gt;[“Let’s just see together, okay?”]
 
 |ahma&gt;[“Okay.”]
-[[Next-&gt;PracticalEnding]]</tw-passagedata><tw-passagedata pid="15" name="RestartConversation" tags="" position="875,1325" size="100,100">|sally&gt;[“Sorry, Ma… I didn’t mean to sound like that.”]
-
-|sally&gt;[“Let’s just see together, okay?”]
-
-|ahma&gt;[“Okay.”]
 
 (set: $ahMaPoints to $ahMaPoints + 1)
 
@@ -419,15 +368,8 @@ You call Ah Ma repetitively, but no one answers.
 ]
 
 (link:&quot;Maybe Ah Ma just went out for some air… I&#39;ll visit her tomorrow, see where she goes.&quot;)
-(link:&quot;Maybe Ah Ma just went out for some air… I&#39;ll visit her tomorrow, see where she goes.&quot;)
 	[(goto: &quot;VisitTomorrow&quot;)]
 
-(link:&quot;You get very worried, so you decide to drive all the way to Ah Ma&#39;s house to check on her.&quot;)[
-	(set: $ahmaPoints to $ahmaPoints + 1)
-	(set: $sallyBurden to $sallyBurden + 1)
-	(goto:&quot;VisitNow&quot;)
-
-]
 (link:&quot;You get very worried, so you decide to drive all the way to Ah Ma&#39;s house to check on her.&quot;)[
 	(set: $ahmaPoints to $ahmaPoints + 1)
 	(set: $sallyBurden to $sallyBurden + 1)
@@ -446,11 +388,7 @@ You call Ah Ma repetitively, but no one answers.
 </tw-passagedata><tw-passagedata pid="21" name="VisitNow" tags="" position="1650,550" size="100,100">(text-style: &quot;italic&quot;)[You arrive at her house, and sure enough, no one is home.
 
 &quot;Where could she be, at this hour??!&quot; Stress and anxiety creeps in.
-</tw-passagedata><tw-passagedata pid="21" name="VisitNow" tags="" position="1650,550" size="100,100">(text-style: &quot;italic&quot;)[You arrive at her house, and sure enough, no one is home.
-
-&quot;Where could she be, at this hour??!&quot; Stress and anxiety creeps in.
 You still have work tomorrow.
-]
 ]
 
 $ChoiceOpening
@@ -470,17 +408,13 @@ $ChoiceOpening
 [[ -&gt;CallRoshan]]
 [[ -&gt;AnyLook1]]
 </tw-passagedata><tw-passagedata pid="22" name="3rdOpening" tags="" position="2400,475" size="100,100">(text-style: &quot;italic&quot;)[2 years have passed. 
-</tw-passagedata><tw-passagedata pid="22" name="3rdOpening" tags="" position="2400,475" size="100,100">(text-style: &quot;italic&quot;)[2 years have passed. 
 
-Your job continues to demand more from you. 
 Your job continues to demand more from you. 
 
 Your son needs you more than ever... and Ah Ma&#39;s condition continues to decline.
 
 In the end, you made a decision to hire a foriegn domestic worker to care for her, full-time.
-In the end, you made a decision to hire a foriegn domestic worker to care for her, full-time.
 
-Although it&#39;s a significant financial commitment, it helped you breathe a little. ]
 Although it&#39;s a significant financial commitment, it helped you breathe a little. ]
 
 (link:&quot;Next.&quot;)[(goto:&quot;NextThird&quot;)]
@@ -523,11 +457,7 @@ $ChoiceOpening
 [[ -&gt;AnyLook1]]</tw-passagedata><tw-passagedata pid="24" name="AnyLook1" tags="" position="1800,750" size="100,100">(text-style: &quot;italic&quot;)[
 Nothing.
 
-[[ -&gt;AnyLook1]]</tw-passagedata><tw-passagedata pid="24" name="AnyLook1" tags="" position="1800,750" size="100,100">(text-style: &quot;italic&quot;)[
-Nothing.
-
 Every corner looks the same.
-
 
 Your phone screen lights up. No new messages.
 The night feels quieter than it should be.
@@ -559,13 +489,6 @@ Your breathing is uneven now. Your chest tightens.
 
 &quot;What if something happened? What if she fell? But also, I&#39;m so tired and I just want to sleep at this point. &quot;
 ]
-</tw-passagedata><tw-passagedata pid="25" name="AnyLook2" tags="" position="1750,875" size="100,100">(text-style: &quot;italic&quot;)[
-She isn&#39;t there.
-
-Your breathing is uneven now. Your chest tightens.
-
-&quot;What if something happened? What if she fell? But also, I&#39;m so tired and I just want to sleep at this point. &quot;
-]
 $ChoiceOpening
 
 (link:&quot;There is nothing much I can do at this point. I&#39;ll go home and try again tomorrow.&quot;)[(goto:&quot;VisitTomorrow&quot;)]
@@ -589,11 +512,6 @@ Still nothing. Your steps are faster now, less certain.
 
 You check the time. It’s 0300.
 
-</tw-passagedata><tw-passagedata pid="26" name="AnyLook3" tags="" position="1800,1025" size="100,100">(text-style: &quot;italic&quot;)[
-Still nothing. Your steps are faster now, less certain.
-
-You check the time. It’s 0300.
-
 You still have work tomorrow.
 The thought feels almost absurd now.
 
@@ -609,7 +527,6 @@ $ChoiceOpening
 		(link-reveal-goto: &quot;Look for her at the &quot; + _place + &quot;.&quot;, &quot;AnyLook4&quot;)[
 			(set: $searchedPlaces to $searchedPlaces + (a:_place))
 			(set: $currentSearchPlace to _place)
-            (set: $ahmaPoints to $ahmaPoints + 1)
             (set: $ahmaPoints to $ahmaPoints + 1)
 		]
 	]
@@ -709,7 +626,7 @@ Maybe she went to find her.
 ]
 $ChoiceOpening
 
-(link:&quot;Next.&quot;)[(goto:&quot;NextCorrect2&quot;)]
+(link:&quot;Look for her at her sister&#39;s house.&quot;)[(goto:&quot;AnyLook5&quot;)]
 
 [[ -&gt;AnyLook5]]</tw-passagedata><tw-passagedata pid="31" name="ScoldAhma" tags="" position="2600,725" size="100,100">(text-style: &quot;italic&quot;)[Ah Ma grows even more agitated, turning away and refusing to speak to either you or Sophia.
 
@@ -719,19 +636,15 @@ Frustration builds in your chest, but the words don’t come. There’s nothing 
 
 Quietly, you set the groceries down.
 ]
-]
 
 |sally3&gt;[“Make sure she takes her medicine, Sophia.”]
 
 (text-style: &quot;italic&quot;)[You don’t wait for a reply.
-(text-style: &quot;italic&quot;)[You don’t wait for a reply.
 
-You leave, the weight of it all following closely behind.]
 You leave, the weight of it all following closely behind.]
 
 (link:&quot;Next.&quot;)[(goto:&quot;EndingThird&quot;)]
 
-[[ -&gt;EndingThird]]</tw-passagedata><tw-passagedata pid="32" name="CalmDownAhma" tags="" position="2350,750" size="100,100">(text-style: &quot;italic&quot;)[You step in slowly, keeping your voice soft.]
 [[ -&gt;EndingThird]]</tw-passagedata><tw-passagedata pid="32" name="CalmDownAhma" tags="" position="2350,750" size="100,100">(text-style: &quot;italic&quot;)[You step in slowly, keeping your voice soft.]
 
 |sally3&gt;[&quot;Ah ma, please calm down.. Sophia, what seems to be the problem?&quot;]
@@ -790,9 +703,6 @@ Type what you want to say to Ah Ma:
 (I am here to help you with your medicine.)
 ]
 
-(I am here to help you with your medicine.)
-]
-
 (input-box: bind $input, 1)
 
 (link: &quot;Say it&quot;)[
@@ -822,10 +732,7 @@ Type what you want to say to Ah Ma:
 
 (link: &quot;Say it&quot;)[
 	(if: $input is &quot;You are okay Ah Ma, we just want to help you.&quot;)[
-	(if: $input is &quot;You are okay Ah Ma, we just want to help you.&quot;)[
 		(set: $input to &quot;&quot;)
-         (set: $ahmaPoints to $ahmaPoints + 1)
-
          (set: $ahmaPoints to $ahmaPoints + 1)
 
 		(goto: &quot;RepeatMeds3&quot;)
@@ -838,15 +745,7 @@ Type what you want to say to Ah Ma:
 
 
 (link:&quot;Maybe later…  you don’t have the energy to repeat yourself again.&quot;) [(goto: &quot;GiveUp&quot;)]
-		&quot;That didn’t come out quite right.&quot;
-	]
-]
 
-
-(link:&quot;Maybe later…  you don’t have the energy to repeat yourself again.&quot;) [(goto: &quot;GiveUp&quot;)]
-
-[[ -&gt;RepeatMeds3]]
-[[ -&gt;GiveUp]]</tw-passagedata><tw-passagedata pid="36" name="RepeatMeds3" tags="" position="2400,1200" size="100,100">(text-style: &quot;italic&quot;)[Ah ma is not entirely convinced, but she looks less tensed now.
 [[ -&gt;RepeatMeds3]]
 [[ -&gt;GiveUp]]</tw-passagedata><tw-passagedata pid="36" name="RepeatMeds3" tags="" position="2400,1200" size="100,100">(text-style: &quot;italic&quot;)[Ah ma is not entirely convinced, but she looks less tensed now.
 
@@ -866,24 +765,20 @@ Type what you want to say to Ah Ma:
 	(if: $input is &quot;Ah Ma, this medicine helps you feel better, it will help you feel better.&quot;)[
 		(set: $input to &quot;&quot;)
          (set: $ahmaPoints to $ahmaPoints + 1)
-         (set: $ahmaPoints to $ahmaPoints + 1)
 		(goto: &quot;RepeatSuccess&quot;)
 	]
 	(else:)[
 		(set: $input to &quot;&quot;)
 		&quot;That didn’t come out quite right. .&quot;
-		&quot;That didn’t come out quite right. .&quot;
 	]
 ]
 
-(link:&quot;Maybe later…  you don’t have the energy to repeat yourself again.&quot;) [(goto: &quot;GiveUp&quot;)]
 (link:&quot;Maybe later…  you don’t have the energy to repeat yourself again.&quot;) [(goto: &quot;GiveUp&quot;)]
 
 [[ -&gt;RepeatSuccess]]
 [[ -&gt;GiveUp]]</tw-passagedata><tw-passagedata pid="37" name="RepeatSuccess" tags="" position="2400,1325" size="100,100">(text-style: &quot;italic&quot;)[Ah Ma pauses.]
 |ahma3&gt;[“…okay…”]
 
-(text-style: &quot;italic&quot;)[She takes the medicine without protest.
 (text-style: &quot;italic&quot;)[She takes the medicine without protest.
 Slowly, she calms...
 
@@ -893,12 +788,9 @@ When things feel stable, you pick up your bag and head toward the door.
 |sally3&gt;[“Sophia, can you help keep the groceries properly later? And remember to follow the doctor’s instructions for her medication.”]
 
 (text-style: &quot;italic&quot;)[Sophia nods in agreement.
-(text-style: &quot;italic&quot;)[Sophia nods in agreement.
 
 You give Ah Ma one last look...
-You give Ah Ma one last look...
 
-You step out, closing the door gently behind you.]
 You step out, closing the door gently behind you.]
 
 (link:&quot;Next.&quot;)[(goto:&quot;EndingThird&quot;)]
